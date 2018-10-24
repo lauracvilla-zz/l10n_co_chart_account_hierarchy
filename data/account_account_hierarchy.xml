@@ -35,14 +35,9 @@
         </record>
 
 
-        <record model="account.account" id="data_account_account_4">
-            <field name="code">110505</field>
-            <field name="name">Caja general</field>
-            <field name="reconcile">True</field>
-            <field search="[('name','=','Bank and Cash')]" model="account.account.type" name="user_type_id"/>
+        <record model="account.account" id="l10n_co.co_puc_110505">
             <field search="[('code','=','1105')]" model="account.account" name="parent_id"/>
         </record>
-
 
 
 
