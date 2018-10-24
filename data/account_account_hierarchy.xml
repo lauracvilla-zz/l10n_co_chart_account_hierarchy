@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="account.account" id="data_account_account_0">
+            <field name="code">0</field>
+            <field name="name">CO PUC ROOT</field>
+            <field name="reconcile">False</field>
+            <field search="[('name','=','Root/View')]" model="account.account.type" name="user_type_id"/>
+        </record>
+
+        <record model="account.account" id="data_account_account_1">
+            <field name="code">1</field>
+            <field name="name">ACTIVO</field>
+            <field name="reconcile">False</field>
+            <field search="[('name','=','Current Assets')]" model="account.account.type" name="user_type_id"/>
+            <field search="[('code','=','0')]" model="account.account" name="parent_id"/>
+        </record>
+
+        <record model="account.account" id="data_account_account_2">
+            <field name="code">11</field>
+            <field name="name">DISPONIBLE</field>
+            <field name="reconcile">False</field>
+            <field search="[('name','=','Current Assets')]" model="account.account.type" name="user_type_id"/>
+            <field search="[('code','=','1')]" model="account.account" name="parent_id"/>
+        </record>
+
+
+        <record model="account.account" id="data_account_account_3">
+            <field name="code">1105</field>
+            <field name="name">Caja</field>
+            <field name="reconcile">True</field>
+            <field search="[('name','=','Bank and Cash')]" model="account.account.type" name="user_type_id"/>
+            <field search="[('code','=','11')]" model="account.account" name="parent_id"/>
+        </record>
+
+
+        <record model="account.account" id="data_account_account_4">
+            <field name="code">110505</field>
+            <field name="name">Caja general</field>
+            <field name="reconcile">True</field>
+            <field search="[('name','=','Bank and Cash')]" model="account.account.type" name="user_type_id"/>
+            <field search="[('code','=','1105')]" model="account.account" name="parent_id"/>
+        </record>
+
+
+
+
+ </data>
+</odoo>

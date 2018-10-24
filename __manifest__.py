@@ -10,11 +10,10 @@
     'summary': '',
     'images': [],
     'depends': [
-        'l10n_co',
         'account_parent',
     ],
     'data': [
         'data/data_account_type.xml',
-        'data/account.account.template.csv'],
+        'data/account_account_hierarchy.xml'],
     'installable': True,
 }
